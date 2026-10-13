@@ -1,0 +1,386 @@
+/* ---------- Colors and fonts ----------
+   Soft warm grays, white, and one accent: butter yellow. */
+:root {
+	/* Grays */
+	--background: #f4f3f1;
+	--card: #ffffff;
+	--text: #2b2b2b;
+	--muted: #6b6866;
+	--border: #e2dfda;
+	--circle-gray: #6b6866;
+
+	/* The one pop of color */
+	--butter: #f5e6a8;
+	--butter-deep: #e9d27a;
+
+	/* Fonts */
+	--font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+	--font-body: "Lato", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Basics ---------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-body);
+	line-height: 1.6;
+	color: var(--text);
+	background: var(--background);
+	/* A thin butter-yellow line across the very top of the page */
+	border-top: 4px solid var(--butter-deep);
+}
+
+main,
+.site-header {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-heading);
+	font-weight: 500;
+}
+
+/* A clear outline on anything you reach with the Tab key */
+:focus-visible {
+	outline: 2px solid var(--text);
+	outline-offset: 3px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+	padding-top: 48px;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+.site-header h1 {
+	margin: 0;
+	font-size: clamp(2.2rem, 6vw, 3.4rem);
+	line-height: 1.1;
+	letter-spacing: 0.01em;
+}
+
+.tagline {
+	margin: 12px auto 0;
+	max-width: 32em;
+	font-family: var(--font-heading);
+	font-style: italic;
+	font-size: 1.1rem;
+	color: var(--muted);
+}
+
+/* A short butter-yellow line under the tagline */
+.tagline::after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 20px auto 0;
+	background: var(--butter-deep);
+}
+
+/* ---------- Gray area legend ---------- */
+.legend {
+	margin: 24px 0 32px;
+	padding: 16px 20px;
+	text-align: center;
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+}
+
+.legend h2 {
+	margin: 0 0 10px;
+	font-size: 1.1rem;
+}
+
+.legend-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px 28px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+
+/* ---------- Gray area badges ----------
+   Every badge is white. Only the gray circle changes:
+     Exact             empty circle (the lightest, lots of room to change)  
+     Some gray area    half circle
+     Lots of gray area full circle (the darkest, least room to change)
+   The circle shape and the words both tell you the level, not just color. */
+.gray-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-right: 6px;
+	padding: 2px 10px;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: var(--text);
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 999px;
+}
+
+/* The circle, drawn with CSS in front of the words */
+.gray-badge::before {
+	content: "";
+	width: 0.9em;
+	height: 0.9em;
+	border: 1.5px solid var(--circle-gray);
+	border-radius: 50%;
+}
+
+.gray-exact::before {
+	background: transparent;
+}
+
+.gray-some::before {
+	background: linear-gradient(90deg, var(--circle-gray) 50%, transparent 50%);
+}
+
+.gray-very::before {
+	background: var(--circle-gray);
+}
+
+/* Shown if a grayArea value in recipes.json is missing or misspelled */
+.gray-unknown {
+	background: var(--butter);
+}
+
+.gray-unknown::before {
+	display: none;
+}
+
+/* ---------- Recipe cards ---------- */
+.recipe-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 24px;
+	margin: 0 0 56px;
+	padding: 0;
+	list-style: none;
+}
+
+.recipe-card {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	width: 100%;
+	height: 100%;
+	padding: 24px 20px;
+	text-align: left;
+	font: inherit;
+	color: inherit;
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+/* On hover or keyboard focus, the card lifts gently with a butter-yellow edge */
+.recipe-card:hover,
+.recipe-card:focus-visible {
+	transform: translateY(-3px);
+	border-color: var(--butter-deep);
+	box-shadow: 0 10px 24px rgba(43, 43, 43, 0.08);
+}
+
+.card-category {
+	align-self: flex-start;
+	padding: 2px 10px;
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text);
+	background: var(--butter);
+	border-radius: 999px;
+}
+
+.card-name {
+	font-family: var(--font-heading);
+	font-size: 1.3rem;
+	line-height: 1.25;
+}
+
+.card-blurb {
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+
+/* ---------- Messages ---------- */
+.status-message {
+	padding: 14px 18px;
+	text-align: center;
+	background: var(--butter);
+	border-radius: 4px;
+}
+
+/* ---------- Opened recipe ---------- */
+.detail-view {
+	margin-bottom: 56px;
+	padding: 32px;
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-top: 4px solid var(--butter-deep);
+	border-radius: 4px;
+	box-shadow: 0 10px 30px rgba(43, 43, 43, 0.06);
+}
+
+.back-button {
+	padding: 6px 18px;
+	font: inherit;
+	font-size: 0.85rem;
+	letter-spacing: 0.04em;
+	color: var(--text);
+	background: transparent;
+	border: 1px solid var(--text);
+	border-radius: 999px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.back-button:hover {
+	background: var(--butter);
+}
+
+.detail-view h2 {
+	margin: 24px 0 0;
+	font-size: clamp(1.8rem, 5vw, 2.4rem);
+	line-height: 1.15;
+}
+
+.detail-subtitle {
+	margin: 6px 0 16px;
+	font-family: var(--font-heading);
+	font-style: italic;
+	color: var(--muted);
+}
+
+/* "Ingredients" and "Instructions" get a soft butter-yellow highlight */
+.detail-view h3 {
+	display: inline-block;
+	margin: 28px 0 8px;
+	padding: 0 4px;
+	font-size: 1.25rem;
+	background: linear-gradient(transparent 60%, var(--butter) 60%);
+}
+
+.detail-list {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ol.detail-list {
+	padding-left: 28px;
+	list-style: decimal;
+}
+
+ol.detail-list li::marker {
+	font-family: var(--font-heading);
+	color: var(--muted);
+}
+
+.detail-list li {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 0;
+	border-bottom: 1px solid var(--border);
+}
+
+ol.detail-list li {
+	display: list-item;
+}
+
+ol.detail-list .gray-badge {
+	float: right;
+	margin-left: 8px;
+}
+
+.amount {
+	font-weight: 700;
+}
+
+/* ---------- Ingredient checkboxes with a hand-drawn X ---------- */
+.ingredient-check {
+	position: relative; /* keeps the hidden checkbox inside this row */
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	cursor: pointer;
+}
+
+/* Hide the browser's checkbox but keep it usable by keyboards and screen readers */
+.check-input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+/* The box you see */
+.check-box {
+	position: relative;
+	flex-shrink: 0;
+	width: 1.1em;
+	height: 1.1em;
+	border: 1.5px solid var(--text);
+	border-radius: 2px;
+	background: var(--card);
+}
+
+/* The X: two slightly wobbly, uneven pen strokes drawn as an SVG image.
+   It sits on top of the box and pokes out past its edges, like a real pen mark.
+   It starts shrunk to nothing and grows in when the box is checked. */
+.check-box::after {
+	content: "";
+	position: absolute;
+	inset: -40%;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.2 4.6c.4-.5 1-.4 1.6.2 3 3.1 6.4 6.9 9.6 10.1 2.1 2.1 4.1 4 6.3 5.9' stroke-width='2.3'/%3E%3Cpath d='M20.4 3.1c-2.6 3.3-5.7 6.6-8.6 9.9-2.6 2.9-5 5.6-7.2 8.6-.2.3-.5.4-.8.2' stroke-width='1.9'/%3E%3C/svg%3E") center / contain no-repeat;
+	transform: scale(0) rotate(-8deg);
+	transition: transform 0.15s ease-out;
+}
+
+.check-input:checked + .check-box::after {
+	transform: scale(1) rotate(-3deg);
+}
+
+/* Show the focus outline on the visible box when using the Tab key */
+.check-input:focus-visible + .check-box {
+	outline: 2px solid var(--text);
+	outline-offset: 3px;
+}
+
+/* Turn off the lift-up movement for people who ask their device for less motion */
+@media (prefers-reduced-motion: reduce) {
+	.recipe-card,
+	.back-button,
+	.check-box::after {
+		transition: none;
+	}
+
+	.recipe-card:hover,
+	.recipe-card:focus-visible {
+		transform: none;
+	}
+}

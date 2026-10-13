@@ -1,0 +1,401 @@
+{
+  "_HOW_TO_FILL_THIS_IN": [
+    "Replace every ENTER ... text with your own words. Keep the quotation marks.",
+    "category must be one of: drinks, desserts, meals",
+    "amount is how much, for example: 2 tbsp, 1 cup, a handful",
+    "grayArea must be one of: exact, some, very",
+    "  exact = measure carefully, don't change it",
+    "  some  = you can adjust it a little",
+    "  very  = change it, swap it, or skip it however you like",
+    "Need more ingredients or steps? Copy a whole { ... } block, paste it right after, and put a comma between them.",
+    "Need more recipes? Copy a whole recipe block { ... } and put a comma after the one before it.",
+    "No comma after the LAST item in a list."
+  ],
+  "recipes": [
+    {
+      "name": "Maple Sea Salt Iced Latte",
+      "category": "drinks",
+      "blurb": "The perfect sweet and salty latte",
+      "ingredients": [
+        {
+          "amount": "1-2 TBSP",
+          "item": "Maple Syrup",
+          "grayArea": "very"
+        },
+        {
+          "amount": "SPRINKLE",
+          "item": "Sea Salt",
+          "grayArea": "very"
+        },
+        {
+          "amount": "2 SHOTS",
+          "item": "Espresso",
+          "grayArea": "some"
+        },
+      {
+          "amount": "1/2 CUP - OR WHATEVER YOUR HEART DESIRES",
+          "item": "Your Favorite Milk",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Pour maple syrup and your sea salt into the bottom of the cup you will use to brew your espresso.",
+          "grayArea": "some"
+        },
+        {
+          "step": "Once espresso is brewed, pour into empty cup and add your desired amount of milk (less is more).",
+          "grayArea": "some"
+        },
+        {
+          "step": "Add ice and enjoy!",
+          "grayArea": "very"
+        }
+      ]
+    },
+    {
+      "name": "Raspberry Chocolate Chip Protein Bites",
+      "category": "desserts",
+      "blurb": "Protein packed bites that are great as a preworkout snack or dessert",
+      "ingredients": [
+        {
+          "amount": "1 CUP",
+          "item": "Rolled Oats",
+          "grayArea": "some"
+        },
+        {
+          "amount": "1/4 CUP",
+          "item": "Honey or Maple Syrup",
+          "grayArea": "some"
+        },
+        {
+          "amount": "1/2 CUP",
+          "item": "Peanut or Almond Butter",
+          "grayArea": "some"
+        },
+        {
+          "amount": "1 SCOOP",
+          "item": "Protein Powder",
+          "grayArea": "very"
+        },
+        {
+          "amount": "A HANDFUL",
+          "item": "Chocolate Chips",
+          "grayArea": "very"
+        },
+        {
+          "amount": "A HANDFUL",
+          "item": "Raspberries - Fresh or Frozen",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Mix all ingredients together in a bowl until well combined.",
+          "grayArea": "exact"
+        },
+        {
+          "step": "Grab small handfuls of the mixture and roll into balls.",
+          "grayArea": "some"
+        },
+        {
+          "step": "Place the protein balls on a baking sheet and put in fridge overnight for best results.",
+          "grayArea": "some"
+        }
+      ]
+    },
+    {
+      "name": "Blueberry Syrup",
+      "category": "drinks",
+      "blurb": "Your own homemade coffee syrup",
+      "ingredients": [
+        {
+          "amount": "BAG OF FROZEN BLUEBERRIES",
+          "item": "Blueberries",
+          "grayArea": "some"
+        },
+        {
+          "amount": "1/2 CUP",
+          "item": "White or brown sugar",
+          "grayArea": "very"
+        },
+        {
+          "amount": "1/4 CUP",
+          "item": "Water",
+          "grayArea": "exact"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Combine all ingredients in a saucepan and bring to a boil.",
+          "grayArea": "exact"
+        },
+        {
+          "step": "Reduce heat and simmer for 10-15 minutes, stirring occasionally.",
+          "grayArea": "some"
+        },
+        {
+          "step": "Strain into a jar and let cool. Store in the fridge for up to 2 weeks.",
+          "grayArea": "exact"
+        }
+      ]
+    },
+    {
+      "name": "Avocado Toast",
+      "category": "meals",
+      "blurb": "An easy and healthy everyday breakfast",
+      "ingredients": [
+        {
+          "amount": "1 AVOCADO",
+          "item": "Avocado",
+          "grayArea": "some"
+        },
+        {
+          "amount": "1-2 SLICES",
+          "item": "Bread (sourdough is recommended)",
+          "grayArea": "some"
+        },
+        {
+          "amount": "SPRINKLE",
+          "item": "Flaky Sea Salt",
+          "grayArea": "very"
+        },
+        {
+          "amount": "OPTIONAL ADD-ONS",
+          "item": "Everything but the bagel seasoning, olive oil, sliced tomato, egg, etc.",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Toast the bread to your desired level of crispiness.",
+          "grayArea": "very"
+        },
+        {
+          "step": "Slice the avocado in half, remove the pit, and scoop the rest into a bowl. Mash with a fork until smooth.",
+          "grayArea": "very"
+        },
+        {
+          "step": "Spread the avocado mixture on the toast and sprinkle with your preferred toppings.",
+          "grayArea": "very"
+        }
+      ]
+    },
+    {
+      "name": "ENTER RECIPE NAME #5",
+      "category": "desserts",
+      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "ingredients": [
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "some"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "ENTER STEP 1",
+          "grayArea": "exact"
+        },
+        {
+          "step": "ENTER STEP 2",
+          "grayArea": "some"
+        },
+        {
+          "step": "ENTER STEP 3",
+          "grayArea": "very"
+        }
+      ]
+    },
+    {
+      "name": "ENTER RECIPE NAME #6",
+      "category": "desserts",
+      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "ingredients": [
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "some"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "ENTER STEP 1",
+          "grayArea": "exact"
+        },
+        {
+          "step": "ENTER STEP 2",
+          "grayArea": "some"
+        },
+        {
+          "step": "ENTER STEP 3",
+          "grayArea": "very"
+        }
+      ]
+    },
+    {
+      "name": "ENTER RECIPE NAME #7",
+      "category": "desserts",
+      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "ingredients": [
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "some"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "ENTER STEP 1",
+          "grayArea": "exact"
+        },
+        {
+          "step": "ENTER STEP 2",
+          "grayArea": "some"
+        },
+        {
+          "step": "ENTER STEP 3",
+          "grayArea": "very"
+        }
+      ]
+    },
+    {
+      "name": "ENTER RECIPE NAME #8",
+      "category": "meals",
+      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "ingredients": [
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "some"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "ENTER STEP 1",
+          "grayArea": "exact"
+        },
+        {
+          "step": "ENTER STEP 2",
+          "grayArea": "some"
+        },
+        {
+          "step": "ENTER STEP 3",
+          "grayArea": "very"
+        }
+      ]
+    },
+    {
+      "name": "ENTER RECIPE NAME #9",
+      "category": "meals",
+      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "ingredients": [
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "some"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "ENTER STEP 1",
+          "grayArea": "exact"
+        },
+        {
+          "step": "ENTER STEP 2",
+          "grayArea": "some"
+        },
+        {
+          "step": "ENTER STEP 3",
+          "grayArea": "very"
+        }
+      ]
+    },
+    {
+      "name": "ENTER RECIPE NAME #10",
+      "category": "meals",
+      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "ingredients": [
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "some"
+        },
+        {
+          "amount": "ENTER AMOUNT",
+          "item": "ENTER INGREDIENT",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "ENTER STEP 1",
+          "grayArea": "exact"
+        },
+        {
+          "step": "ENTER STEP 2",
+          "grayArea": "some"
+        },
+        {
+          "step": "ENTER STEP 3",
+          "grayArea": "very"
+        }
+      ]
+    }
+  ]
+}

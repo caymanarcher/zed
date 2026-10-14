@@ -185,7 +185,7 @@
         {
       "name": "Brown Sugar Oat Milk Shaken Espresso",
       "category": "drinks",
-      "blurb": "A cozy coffee shop favorite made at home",
+      "blurb": "The perfect Starbucks copycat!",
       "ingredients": [
         {
           "amount": "2 SHOTS",
@@ -210,12 +210,12 @@
         {
           "amount": "1 CUP",
           "item": "Ice",
-          "grayArea": "some"
+          "grayArea": "very"
         }
       ],
       "instructions": [
         {
-          "step": "Brew espresso and stir in brown sugar and cinnamon while it's hot so the sugar dissolves.",
+          "step": "Brew espresso over a cup with the brown sugar & cinnamon inside.",
           "grayArea": "some"
         },
         {
@@ -269,7 +269,7 @@
           "grayArea": "very"
         },
         {
-          "step": "Pour into a cup and enjoy right away!",
+          "step": "Pour into a cup and enjoy!",
           "grayArea": "very"
         }
       ]
@@ -353,7 +353,7 @@
       ],
       "instructions": [
         {
-          "step": "Toss the chicken in hot honey until coated. Warm it up in a pan or microwave if you like.",
+          "step": "Toss the chicken in hot honey until coated.",
           "grayArea": "some"
         },
         {
@@ -362,7 +362,7 @@
         },
         {
           "step": "Fold in the sides, roll it up tight, and toast seam-side down in a pan for 1-2 minutes.",
-          "grayArea": "some"
+          "grayArea": "exact"
         }
       ]
     },
@@ -373,7 +373,7 @@
       "ingredients": [
         {
           "amount": "2 CUPS",
-          "item": "Greek Yogurt (vanilla or plain)",
+          "item": "Greek Yogurt (any kind)",
           "grayArea": "some"
         },
         {
@@ -398,7 +398,7 @@
           "grayArea": "some"
         },
         {
-          "step": "Sprinkle berries and chocolate chips or granola on top.",
+          "step": "Sprinkle berries, chocolate chips, and/or granola on top.",
           "grayArea": "very"
         },
         {

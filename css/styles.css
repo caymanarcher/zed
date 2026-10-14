@@ -113,12 +113,7 @@ h3 {
 	color: var(--muted);
 }
 
-/* ---------- Gray area badges ----------
-   Every badge is white. Only the gray circle changes:
-     Exact             empty circle (the lightest, lots of room to change)  
-     Some gray area    half circle
-     Lots of gray area full circle (the darkest, least room to change)
-   The circle shape and the words both tell you the level, not just color. */
+/* ---------- Gray area badges ---------- */
 .gray-badge {
 	display: inline-flex;
 	align-items: center;
@@ -164,6 +159,70 @@ h3 {
 
 .gray-unknown::before {
 	display: none;
+}
+
+/* ---------- Search and category filters ---------- */
+.filters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px 20px;
+	margin-bottom: 28px;
+}
+
+/* Keeps the label for screen readers but hides it on screen
+   (the placeholder text already shows what the box is for) */
+.search-label {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+.search-input {
+	flex: 1 1 220px;
+	padding: 10px 18px;
+	font: inherit;
+	color: var(--text);
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 999px;
+}
+
+.search-input:focus {
+	border-color: var(--butter-deep);
+}
+
+.category-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.category-button {
+	padding: 6px 18px;
+	font: inherit;
+	font-size: 0.85rem;
+	letter-spacing: 0.04em;
+	color: var(--text);
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	cursor: pointer;
+	transition: background 0.2s, border-color 0.2s;
+}
+
+.category-button:hover {
+	border-color: var(--butter-deep);
+}
+
+/* The chosen button turns butter yellow and bold */
+.category-button[aria-pressed="true"] {
+	font-weight: 700;
+	background: var(--butter);
+	border-color: var(--butter-deep);
 }
 
 /* ---------- Recipe cards ---------- */
@@ -369,18 +428,4 @@ ol.detail-list .gray-badge {
 .check-input:focus-visible + .check-box {
 	outline: 2px solid var(--text);
 	outline-offset: 3px;
-}
-
-/* Turn off the lift-up movement for people who ask their device for less motion */
-@media (prefers-reduced-motion: reduce) {
-	.recipe-card,
-	.back-button,
-	.check-box::after {
-		transition: none;
-	}
-
-	.recipe-card:hover,
-	.recipe-card:focus-visible {
-		transform: none;
-	}
 }

@@ -9,3 +9,6 @@ It replaced "words" in this code:
 with label.append(checkbox, box, words); as well as "label" instead of words. 
 It also added an accessibility component where tab moves to the next box, and space can check or uncheck it. //
 
+Asked AI to help me create the rest of the code for my recipes based on the 5 I had already created
+
+Asked Claude to add a search bar and category filter (Drinks, Desserts, Meals). It added applyFilters(), which uses .filter() to keep recipes that match both the chosen category and the typed text, using .toLowerCase() so capitals don't matter.

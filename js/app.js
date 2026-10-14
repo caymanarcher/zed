@@ -21,6 +21,11 @@ const listView = document.querySelector("#list-view");
 const recipeList = document.querySelector("#recipe-list");
 const statusMessage = document.querySelector("#status-message");
 const detailView = document.querySelector("#detail-view");
+const searchInput = document.querySelector("#search-input");
+const categoryButtons = document.querySelector(".category-buttons");
+
+// Which category button is chosen right now ("all", "drinks", "desserts", or "meals").
+let selectedCategory = "all";
 
 // ---------- 2. Small helpers ----------
 
@@ -82,7 +87,7 @@ async function loadRecipes() {
 			throw new Error('recipes.json needs a "recipes" list');
 		}
 
-		renderRecipeCards(recipes);
+		applyFilters();
 	} catch (error) {
 		// Shows the real problem in the browser's console (for you),
 		// and a friendly message on the page (for the reader).
@@ -127,7 +132,50 @@ function renderRecipeCards(listToShow) {
 	});
 }
 
-// ---------- 5. Open and close one recipe ----------
+// ---------- 5. Search and filter ----------
+
+// Keeps only the recipes that match BOTH the chosen category
+// and the words typed in the search box, then redraws the cards.
+function applyFilters() {
+	const searchText = searchInput.value.trim().toLowerCase();
+
+	const matches = recipes.filter(function (recipe) {
+		const category = (recipe.category || "").toLowerCase();
+		const name = (recipe.name || "").toLowerCase();
+
+		const categoryMatches = selectedCategory === "all" || category === selectedCategory;
+
+		// Typing a category word like "dessert" also finds those recipes.
+		const searchMatches = name.includes(searchText) || category.includes(searchText);
+
+		return categoryMatches && searchMatches;
+	});
+
+	renderRecipeCards(matches);
+}
+
+// Runs every time a letter is typed or deleted in the search box.
+searchInput.addEventListener("input", applyFilters);
+
+// One listener for all the category buttons (event delegation again).
+categoryButtons.addEventListener("click", function (event) {
+	const button = event.target.closest(".category-button");
+	if (!button) {
+		return;
+	}
+
+	selectedCategory = button.dataset.category;
+
+	// aria-pressed tells screen readers which button is turned on,
+	// and the CSS uses it to highlight that button.
+	categoryButtons.querySelectorAll(".category-button").forEach(function (otherButton) {
+		otherButton.setAttribute("aria-pressed", otherButton === button ? "true" : "false");
+	});
+
+	applyFilters();
+});
+
+// ---------- 6. Open and close one recipe ----------
 
 function openRecipe(index) {
 	const recipe = recipes[index];
@@ -221,7 +269,7 @@ function closeRecipe() {
 	}
 }
 
-// ---------- 6. Event delegation ----------
+// ---------- 7. Event delegation ----------
 
 // ONE listener on the whole card list, instead of one on every card.
 // event.target is the exact thing clicked (maybe the name or blurb text).
@@ -251,6 +299,6 @@ document.addEventListener("keydown", function (event) {
 	}
 });
 
-// ---------- 7. Start the app ----------
+// ---------- 8. Start the app ----------
 
 loadRecipes();

@@ -15,7 +15,7 @@
 	<body>
 		<header class="site-header">
 			<h1>The Gray Area Kitchen</h1>
-			<p class="tagline">Easy recipes that show you where you can relax and where you need to measure.</p>
+			<p class="tagline">Where “eyeball it” is an instruction.</p>
 		</header>
 
 		<main>
@@ -31,6 +31,19 @@
 
 			<!-- VIEW 1: the grid of recipe cards (JavaScript fills this in) -->
 			<section id="list-view" aria-label="Recipes">
+				<!-- Search box and category buttons that narrow down the cards -->
+				<div class="filters">
+					<label for="search-input" class="search-label">Search recipes</label>
+					<input id="search-input" class="search-input" type="search" placeholder="Try “latte” or “pasta”" autocomplete="off">
+
+					<div class="category-buttons" role="group" aria-label="Filter by category">
+						<button type="button" class="category-button" data-category="all" aria-pressed="true">All</button>
+						<button type="button" class="category-button" data-category="drinks" aria-pressed="false">Drinks</button>
+						<button type="button" class="category-button" data-category="desserts" aria-pressed="false">Desserts</button>
+						<button type="button" class="category-button" data-category="meals" aria-pressed="false">Meals</button>
+					</div>
+				</div>
+
 				<p id="status-message" class="status-message" role="status" hidden></p>
 				<ul id="recipe-list" class="recipe-list"></ul>
 			</section>

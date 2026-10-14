@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" role="img" aria-label="Line drawing of a chicken wrap cut in half with a honey dipper">
+<defs>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7"/>
+<feDisplacementMap in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="pen" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="3"/>
+<feDisplacementMap in="SourceGraphic" scale="1.4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</defs>
+<g filter="url(#wash)" stroke="none">
+<ellipse cx="84" cy="124" rx="52" ry="5" fill="#ebe6dd"/><ellipse cx="150" cy="148" rx="30" ry="3" fill="#ebe6dd"/><path d="M122 58 L54 66 Q34 70 34 93 Q34 116 56 120 L126 114 Z" fill="#ecd8b0" opacity="0.9" transform="translate(3 2)"/><ellipse cx="125" cy="88" rx="10" ry="23" fill="#cdd8b0" transform="rotate(-6 125 88)"/><circle cx="121" cy="80" r="4" fill="#e3c08f"/><circle cx="128" cy="96" r="4.5" fill="#e3c08f"/><circle cx="124" cy="104" r="3" fill="#e3c08f"/><path d="M146 132 Q150 124 160 120 Q172 118 172 126 Q170 134 160 136 Q150 138 146 132 Z" fill="#ecc98a" opacity="0.9" transform="translate(1 1)"/><ellipse cx="156" cy="146" rx="12" ry="3" fill="#ecc98a"/>
+</g>
+<g filter="url(#pen)" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M122 58 L54 66 Q34 70 34 93 Q34 116 56 120 L126 114"/><ellipse cx="124" cy="86" rx="13" ry="28" transform="rotate(-6 124 86)"/><ellipse cx="124" cy="87" rx="9" ry="22" stroke-width="0.8" transform="rotate(-6 124 87)"/><path d="M118 70 L121 66 L124 70 L127 66 L130 71 M116 98 L119 102 L122 98 L125 103 L129 99" stroke-width="0.8"/><circle cx="121" cy="80" r="4" stroke-width="0.9"/><circle cx="128" cy="95" r="4.5" stroke-width="0.9"/><circle cx="124" cy="104" r="3" stroke-width="0.9"/><circle cx="127" cy="84" r="1.4" fill="#d9705e" stroke="none"/><circle cx="119" cy="92" r="1.2" fill="#d9705e" stroke="none"/><circle cx="130" cy="78" r="1" fill="#d9705e" stroke="none"/><path d="M54 66 Q44 80 46 98 Q48 112 56 120" stroke-width="0.8" opacity="0.5"/><g stroke="#b9967c" stroke-width="1.6" opacity="0.8"><path d="M66 80 l6 -3 M92 100 l7 -3 M82 74 l4 -2 M64 106 l5 -2 M104 82 l5 -2"/></g><path d="M122 59 Q96 84 112 113" stroke-width="0.8" opacity="0.55"/><path d="M80 152 L146 130" stroke-width="1.6"/><path d="M146 132 Q150 124 160 120 Q172 118 172 126 Q170 134 160 136 Q150 138 146 132 Z"/><path d="M151 125 Q154 132 152 136 M157 121 Q161 129 158 136 M164 119 Q168 126 166 134" stroke-width="0.9"/><path d="M158 136 Q157 141 158 143" stroke-width="1"/><ellipse cx="156" cy="146" rx="12" ry="3" stroke-width="0.9"/>
+</g>
+</svg>

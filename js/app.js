@@ -55,6 +55,16 @@ function makeGrayAreaBadge(grayArea) {
 	return makeElement("span", "gray-badge " + label.className, label.text);
 }
 
+// Makes the little sketched picture for a recipe.
+// alt is empty on purpose: the recipe name is right next to the picture,
+// so screen readers don't need to hear it twice.
+function makeRecipeImage(recipe, className) {
+	const image = makeElement("img", className);
+	image.src = recipe.image;
+	image.alt = "";
+	return image;
+}
+
 // Shows a message above the cards (or hides it if the text is empty).
 function showStatus(text) {
 	statusMessage.textContent = text;
@@ -120,6 +130,11 @@ function renderRecipeCards(listToShow) {
 		const card = makeElement("button", "recipe-card");
 		card.type = "button";
 		card.dataset.index = index;
+
+		// Only add a picture if the recipe has one in recipes.json.
+		if (recipe.image) {
+			card.append(makeRecipeImage(recipe, "card-image"));
+		}
 
 		card.append(
 			makeElement("span", "card-category", capitalize(recipe.category) || "No category"),
@@ -239,8 +254,13 @@ function openRecipe(index) {
 		stepsList.append(row);
 	});
 
+	detailView.append(backButton);
+
+	if (recipe.image) {
+		detailView.append(makeRecipeImage(recipe, "detail-image"));
+	}
+
 	detailView.append(
-		backButton,
 		title,
 		subtitle,
 		makeElement("h3", "", "Ingredients"),

@@ -3,6 +3,7 @@
     "Replace every ENTER ... text with your own words. Keep the quotation marks.",
     "category must be one of: drinks, desserts, meals",
     "amount is how much, for example: 2 tbsp, 1 cup, a handful",
+    "image is the path to the picture for the card, for example: images/avocado-toast.svg",
     "grayArea must be one of: exact, some, very",
     "  exact = measure carefully, don't change it",
     "  some  = you can adjust it a little",
@@ -16,6 +17,7 @@
       "name": "Maple Sea Salt Iced Latte",
       "category": "drinks",
       "blurb": "The perfect sweet and salty latte",
+      "image": "images/maple-sea-salt-iced-latte.svg",
       "ingredients": [
         {
           "amount": "1-2 TBSP",
@@ -57,6 +59,7 @@
       "name": "Raspberry Chocolate Chip Protein Bites",
       "category": "desserts",
       "blurb": "Protein packed bites that are great as a preworkout snack or dessert",
+      "image": "images/raspberry-chocolate-chip-protein-bites.svg",
       "ingredients": [
         {
           "amount": "1 CUP",
@@ -108,6 +111,7 @@
       "name": "Blueberry Syrup",
       "category": "drinks",
       "blurb": "Your own homemade coffee syrup",
+      "image": "images/blueberry-syrup.svg",
       "ingredients": [
         {
           "amount": "BAG OF FROZEN BLUEBERRIES",
@@ -144,6 +148,7 @@
       "name": "Avocado Toast",
       "category": "meals",
       "blurb": "An easy and healthy everyday breakfast",
+      "image": "images/avocado-toast.svg",
       "ingredients": [
         {
           "amount": "1 AVOCADO",
@@ -186,6 +191,7 @@
       "name": "Brown Sugar Oat Milk Shaken Espresso",
       "category": "drinks",
       "blurb": "The perfect Starbucks copycat!",
+      "image": "images/brown-sugar-oat-milk-shaken-espresso.svg",
       "ingredients": [
         {
           "amount": "2 SHOTS",
@@ -232,6 +238,7 @@
       "name": "Strawberry Banana Protein Smoothie",
       "category": "drinks",
       "blurb": "A fruity post-workout smoothie that keeps you full",
+      "image": "images/strawberry-banana-protein-smoothie.svg",
       "ingredients": [
         {
           "amount": "1 CUP",
@@ -278,6 +285,7 @@
       "name": "Pesto Caprese Pasta",
       "category": "meals",
       "blurb": "A fresh 15-minute pasta that tastes like summer",
+      "image": "images/pesto-caprese-pasta.svg",
       "ingredients": [
         {
           "amount": "2 CUPS",
@@ -324,6 +332,7 @@
       "name": "Hot Honey Chicken Wrap",
       "category": "meals",
       "blurb": "A sweet and spicy lunch you can make in minutes",
+      "image": "images/hot-honey-chicken-wrap.svg",
       "ingredients": [
         {
           "amount": "1",
@@ -370,6 +379,7 @@
       "name": "Frozen Yogurt Bark",
       "category": "desserts",
       "blurb": "A cold and creamy treat that feels light",
+      "image": "images/frozen-yogurt-bark.svg",
       "ingredients": [
         {
           "amount": "2 CUPS",
@@ -411,6 +421,7 @@
       "name": "2-Minute Mug Brownie",
       "category": "desserts",
       "blurb": "A warm single-serve brownie for when the craving hits",
+      "image": "images/2-minute-mug-brownie.svg",
       "ingredients": [
         {
           "amount": "4 TBSP",

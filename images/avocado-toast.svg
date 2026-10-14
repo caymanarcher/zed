@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" role="img" aria-label="Line drawing of avocado toast with half an avocado">
+<defs>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7"/>
+<feDisplacementMap in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="pen" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="3"/>
+<feDisplacementMap in="SourceGraphic" scale="1.4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</defs>
+<g filter="url(#wash)" stroke="none">
+<ellipse cx="86" cy="143" rx="50" ry="5" fill="#ebe6dd"/><ellipse cx="158" cy="143" rx="22" ry="4" fill="#ebe6dd"/><path d="M44 140 V80 Q30 74 34 58 Q42 38 70 38 H98 Q126 38 132 58 Q136 74 122 80 V140 Z" fill="#ecd8b0" opacity="0.9" transform="translate(3 2)"/><path d="M0 -26 Q13 0 0 26 Q-6 0 0 -26 Z" fill="#cdd8b0" opacity="0.95" transform="translate(68 92) rotate(-18) translate(1.5 1)"/><path d="M0 -26 Q13 0 0 26 Q-6 0 0 -26 Z" fill="#cdd8b0" opacity="0.95" transform="translate(84 92) rotate(-4) translate(1.5 1)"/><path d="M0 -26 Q13 0 0 26 Q-6 0 0 -26 Z" fill="#cdd8b0" opacity="0.95" transform="translate(100 92) rotate(10) translate(1.5 1)"/><path d="M160 70 Q180 90 178 116 Q176 140 158 140 Q140 140 138 116 Q136 90 160 70 Z" fill="#aebf8c" opacity="0.9" transform="translate(2 2)"/><path d="M159 84 Q170 98 169 116 Q167 130 158 130 Q149 130 147 116 Q146 98 159 84 Z" fill="#e6ecc8" opacity="0.9" transform="translate(0 0)"/><circle cx="159" cy="115" r="8" fill="#c9a588" opacity="0.9"/><circle cx="58" cy="70" r="1.6" fill="#eda594" opacity="0.9"/><circle cx="110" cy="122" r="1.4" fill="#eda594" opacity="0.9"/><circle cx="92" cy="60" r="1.5" fill="#eda594" opacity="0.9"/><circle cx="76" cy="128" r="1.4" fill="#eda594" opacity="0.9"/>
+</g>
+<g filter="url(#pen)" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M44 140 V80 Q30 74 34 58 Q42 38 70 38 H98 Q126 38 132 58 Q136 74 122 80 V140 Z"/><path d="M51 134 V84 Q40 78 43 64 Q49 47 71 47 H97 Q118 47 123 64 Q126 78 115 84 V134 Z" stroke-width="0.8" opacity="0.55"/><circle cx="58" cy="124" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="64" cy="130" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="98" cy="128" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="106" cy="132" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="54" cy="110" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="116" cy="104" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="112" cy="60" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="60" cy="56" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="88" cy="130" r="0.7" fill="#2b2b2b" stroke="none"/><g transform="translate(68 92) rotate(-18)"><path d="M0 -26 Q13 0 0 26 Q-6 0 0 -26 Z"/><path d="M-1.5 -21 Q-4 0 -1.5 21" stroke-width="0.8"/></g><g transform="translate(84 92) rotate(-4)"><path d="M0 -26 Q13 0 0 26 Q-6 0 0 -26 Z"/><path d="M-1.5 -21 Q-4 0 -1.5 21" stroke-width="0.8"/></g><g transform="translate(100 92) rotate(10)"><path d="M0 -26 Q13 0 0 26 Q-6 0 0 -26 Z"/><path d="M-1.5 -21 Q-4 0 -1.5 21" stroke-width="0.8"/></g><path d="M160 70 Q180 90 178 116 Q176 140 158 140 Q140 140 138 116 Q136 90 160 70 Z"/><path d="M159 84 Q170 98 169 116 Q167 130 158 130 Q149 130 147 116 Q146 98 159 84 Z" stroke-width="1"/><circle cx="158" cy="114" r="8"/><path d="M153 110 Q155 107 158 106.5" stroke-width="0.8"/>
+</g>
+</svg>

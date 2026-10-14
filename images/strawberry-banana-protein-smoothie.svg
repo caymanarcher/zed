@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" role="img" aria-label="Line drawing of a strawberry smoothie in a jar with a strawberry and a banana">
+<defs>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%">
+<feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7"/>
+<feDisplacementMap in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+<filter id="pen" x="-5%" y="-5%" width="110%" height="110%">
+<feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="3"/>
+<feDisplacementMap in="SourceGraphic" scale="1.4" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</defs>
+<g filter="url(#wash)" stroke="none">
+<ellipse cx="100" cy="145" rx="34" ry="5" fill="#ebe6dd"/><ellipse cx="44" cy="141" rx="24" ry="3" fill="#ebe6dd"/><ellipse cx="152" cy="148" rx="16" ry="3" fill="#ebe6dd"/><path d="M71 57 Q100 61 129 57 V132 Q129 141 120 141 H80 Q71 141 71 132 Z" fill="#f0c2c4" opacity="0.9" transform="translate(3 2)"/><path d="M22 128 Q42 150 66 128 L64 122 Q44 136 26 120 Z" fill="#f5e6a8" opacity="0.9" transform="translate(2 1.5)"/><path d="M140 116 Q152 110 164 116 Q168 130 152 146 Q136 130 140 116 Z" fill="#e79fa6" opacity="0.9" transform="translate(2 1.5)"/><path d="M110 56 L120 6 L126 7 L116 57 Z" fill="#f6dede" opacity="0.9" transform="translate(0.5 0.5)"/>
+</g>
+<g filter="url(#pen)" fill="none" stroke="#2b2b2b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M72 34 H128 V46 H72 Z"/><path d="M72 38 Q100 41 128 38 M72 42 Q100 45 128 42" stroke-width="0.8" opacity="0.6"/><path d="M72 46 Q70 50 70 58 V132 Q70 142 80 142 H120 Q130 142 130 132 V58 Q130 50 128 46"/><path d="M71 57 Q100 61 129 57" stroke-width="0.9"/><path d="M108 56 L118 6 M114 57 L124 7 M118 6 L124 7"/><g stroke="#e79fa6"><path d="M109.2 50 L114.6 53" stroke-width="1.6"/><path d="M110.8 42 L116.2 45" stroke-width="1.6"/><path d="M112.4 34 L117.8 37" stroke-width="1.6"/><path d="M114.0 26 L119.4 29" stroke-width="1.6"/><path d="M115.6 18 L121.0 21" stroke-width="1.6"/><path d="M117.2 10 L122.6 13" stroke-width="1.6"/></g><path d="M78 66 V128" stroke-width="0.9" opacity="0.45"/><circle cx="86" cy="80" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="96" cy="96" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="110" cy="84" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="90" cy="116" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="114" cy="110" r="0.7" fill="#2b2b2b" stroke="none"/><circle cx="102" cy="126" r="0.7" fill="#2b2b2b" stroke="none"/><path d="M22 128 Q42 150 66 128 L64 122 Q44 136 26 120 Z"/><path d="M64 122 L69 117 L71 119" stroke-width="1.1"/><path d="M27 126 Q44 140 62 127" stroke-width="0.8" opacity="0.6"/><path d="M22 128 L19 127" stroke-width="1.6"/><path d="M140 116 Q152 110 164 116 Q168 130 152 146 Q136 130 140 116 Z"/><path d="M140 116 L143 109 L147 114 L152 107 L157 114 L161 109 L164 116" stroke-width="1"/><path d="M146 122 l0.6 1.6 M154 120 l0.6 1.6 M160 124 l-0.4 1.6 M150 130 l0.6 1.6 M157 132 l0 1.6 M152 139 l0.4 1.4 M144 128 l0.6 1.4" stroke-width="1"/>
+</g>
+</svg>

@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Where “eyeball it” is an instruction.">
 		<title>The Gray Area Kitchen</title>
-		<!-- Fonts: Playfair Display for headings, Lato for everything else -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap">
@@ -19,7 +18,6 @@
 		</header>
 
 		<main>
-			<!-- Key that explains the three "gray area" labels -->
 			<section class="legend" aria-labelledby="legend-title">
 				<h2 id="legend-title">How much gray area is there?</h2>
 				<ul class="legend-list">
@@ -29,9 +27,7 @@
 				</ul>
 			</section>
 
-			<!-- VIEW 1: the grid of recipe cards (JavaScript fills this in) -->
 			<section id="list-view" aria-label="Recipes">
-				<!-- Search box and category buttons that narrow down the cards -->
 				<div class="filters">
 					<label for="search-input" class="search-label">Search recipes</label>
 					<input id="search-input" class="search-input" type="search" placeholder="Try “latte” or “pasta”" autocomplete="off">
@@ -48,7 +44,6 @@
 				<ul id="recipe-list" class="recipe-list"></ul>
 			</section>
 
-			<!-- VIEW 2: one opened recipe (JavaScript fills this in when a card is clicked) -->
 			<section id="detail-view" class="detail-view" hidden></section>
 		</main>
 	</body>

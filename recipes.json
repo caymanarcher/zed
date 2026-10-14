@@ -181,219 +181,280 @@
         }
       ]
     },
-    {
-      "name": "ENTER RECIPE NAME #5",
-      "category": "desserts",
-      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+
+        {
+      "name": "Brown Sugar Oat Milk Shaken Espresso",
+      "category": "drinks",
+      "blurb": "A cozy coffee shop favorite made at home",
       "ingredients": [
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "exact"
-        },
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "2 SHOTS",
+          "item": "Espresso",
           "grayArea": "some"
         },
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "1 TBSP",
+          "item": "Brown Sugar",
           "grayArea": "very"
+        },
+        {
+          "amount": "DASH",
+          "item": "Cinnamon",
+          "grayArea": "very"
+        },
+        {
+          "amount": "1/2 CUP",
+          "item": "Oat Milk",
+          "grayArea": "very"
+        },
+        {
+          "amount": "1 CUP",
+          "item": "Ice",
+          "grayArea": "some"
         }
       ],
       "instructions": [
         {
-          "step": "ENTER STEP 1",
-          "grayArea": "exact"
-        },
-        {
-          "step": "ENTER STEP 2",
+          "step": "Brew espresso and stir in brown sugar and cinnamon while it's hot so the sugar dissolves.",
           "grayArea": "some"
         },
         {
-          "step": "ENTER STEP 3",
+          "step": "Pour the espresso over ice in a shaker or jar with a lid and shake for 10-15 seconds until foamy.",
+          "grayArea": "some"
+        },
+        {
+          "step": "Pour into a glass and top with oat milk. Enjoy!",
           "grayArea": "very"
         }
       ]
     },
     {
-      "name": "ENTER RECIPE NAME #6",
-      "category": "desserts",
-      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "name": "Strawberry Banana Protein Smoothie",
+      "category": "drinks",
+      "blurb": "A fruity post-workout smoothie that keeps you full",
       "ingredients": [
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "exact"
-        },
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "1 CUP",
+          "item": "Frozen Strawberries",
           "grayArea": "some"
         },
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "1",
+          "item": "Banana (frozen works best)",
+          "grayArea": "some"
+        },
+        {
+          "amount": "1 SCOOP",
+          "item": "Vanilla Protein Powder",
+          "grayArea": "very"
+        },
+        {
+          "amount": "1/2 CUP",
+          "item": "Greek Yogurt",
+          "grayArea": "very"
+        },
+        {
+          "amount": "3/4 CUP",
+          "item": "Your Favorite Milk",
           "grayArea": "very"
         }
       ],
       "instructions": [
         {
-          "step": "ENTER STEP 1",
-          "grayArea": "exact"
-        },
-        {
-          "step": "ENTER STEP 2",
+          "step": "Add milk to the blender first, then the rest of the ingredients.",
           "grayArea": "some"
         },
         {
-          "step": "ENTER STEP 3",
+          "step": "Blend until smooth, adding more milk if it's too thick.",
+          "grayArea": "very"
+        },
+        {
+          "step": "Pour into a cup and enjoy right away!",
           "grayArea": "very"
         }
       ]
     },
     {
-      "name": "ENTER RECIPE NAME #7",
-      "category": "desserts",
-      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
-      "ingredients": [
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "exact"
-        },
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "some"
-        },
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "very"
-        }
-      ],
-      "instructions": [
-        {
-          "step": "ENTER STEP 1",
-          "grayArea": "exact"
-        },
-        {
-          "step": "ENTER STEP 2",
-          "grayArea": "some"
-        },
-        {
-          "step": "ENTER STEP 3",
-          "grayArea": "very"
-        }
-      ]
-    },
-    {
-      "name": "ENTER RECIPE NAME #8",
+      "name": "Pesto Caprese Pasta",
       "category": "meals",
-      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "blurb": "A fresh 15-minute pasta that tastes like summer",
       "ingredients": [
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "exact"
-        },
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "2 CUPS",
+          "item": "Pasta (penne or rotini)",
           "grayArea": "some"
         },
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "1/4 CUP",
+          "item": "Basil Pesto",
+          "grayArea": "very"
+        },
+        {
+          "amount": "1 CUP",
+          "item": "Cherry Tomatoes, halved",
+          "grayArea": "very"
+        },
+        {
+          "amount": "1/2 CUP",
+          "item": "Mini Mozzarella Balls",
+          "grayArea": "very"
+        },
+        {
+          "amount": "DRIZZLE",
+          "item": "Balsamic Glaze",
           "grayArea": "very"
         }
       ],
       "instructions": [
         {
-          "step": "ENTER STEP 1",
+          "step": "Cook pasta according to the package directions, then drain.",
           "grayArea": "exact"
         },
         {
-          "step": "ENTER STEP 2",
+          "step": "Toss the warm pasta with pesto until coated.",
           "grayArea": "some"
         },
         {
-          "step": "ENTER STEP 3",
+          "step": "Stir in tomatoes and mozzarella, then top with a drizzle of balsamic glaze.",
           "grayArea": "very"
         }
       ]
     },
     {
-      "name": "ENTER RECIPE NAME #9",
+      "name": "Hot Honey Chicken Wrap",
       "category": "meals",
-      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "blurb": "A sweet and spicy lunch you can make in minutes",
       "ingredients": [
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "exact"
-        },
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "1",
+          "item": "Large Tortilla",
           "grayArea": "some"
         },
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "1 CUP",
+          "item": "Cooked Chicken (rotisserie works great)",
+          "grayArea": "some"
+        },
+        {
+          "amount": "1 TBSP",
+          "item": "Hot Honey",
+          "grayArea": "very"
+        },
+        {
+          "amount": "A HANDFUL",
+          "item": "Spinach or Lettuce",
+          "grayArea": "very"
+        },
+        {
+          "amount": "SPRINKLE",
+          "item": "Feta Cheese",
           "grayArea": "very"
         }
       ],
       "instructions": [
         {
-          "step": "ENTER STEP 1",
-          "grayArea": "exact"
-        },
-        {
-          "step": "ENTER STEP 2",
+          "step": "Toss the chicken in hot honey until coated. Warm it up in a pan or microwave if you like.",
           "grayArea": "some"
         },
         {
-          "step": "ENTER STEP 3",
+          "step": "Layer spinach, chicken, and feta down the center of the tortilla.",
           "grayArea": "very"
+        },
+        {
+          "step": "Fold in the sides, roll it up tight, and toast seam-side down in a pan for 1-2 minutes.",
+          "grayArea": "some"
         }
       ]
     },
     {
-      "name": "ENTER RECIPE NAME #10",
-      "category": "meals",
-      "blurb": "ENTER A SHORT ONE-LINE DESCRIPTION",
+      "name": "Frozen Yogurt Bark",
+      "category": "desserts",
+      "blurb": "A cold and creamy treat that feels light",
       "ingredients": [
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
-          "grayArea": "exact"
-        },
-        {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "2 CUPS",
+          "item": "Greek Yogurt (vanilla or plain)",
           "grayArea": "some"
         },
         {
-          "amount": "ENTER AMOUNT",
-          "item": "ENTER INGREDIENT",
+          "amount": "2 TBSP",
+          "item": "Honey",
+          "grayArea": "very"
+        },
+        {
+          "amount": "A HANDFUL",
+          "item": "Berries - Fresh or Frozen",
+          "grayArea": "very"
+        },
+        {
+          "amount": "A HANDFUL",
+          "item": "Chocolate Chips or Granola",
           "grayArea": "very"
         }
       ],
       "instructions": [
         {
-          "step": "ENTER STEP 1",
-          "grayArea": "exact"
-        },
-        {
-          "step": "ENTER STEP 2",
+          "step": "Mix yogurt and honey together, then spread about 1/2 inch thick on a parchment-lined baking sheet.",
           "grayArea": "some"
         },
         {
-          "step": "ENTER STEP 3",
+          "step": "Sprinkle berries and chocolate chips or granola on top.",
           "grayArea": "very"
+        },
+        {
+          "step": "Freeze for at least 3 hours, then break into pieces. Store in the freezer.",
+          "grayArea": "exact"
+        }
+      ]
+    },
+    {
+      "name": "2-Minute Mug Brownie",
+      "category": "desserts",
+      "blurb": "A warm single-serve brownie for when the craving hits",
+      "ingredients": [
+        {
+          "amount": "4 TBSP",
+          "item": "Flour",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "2 TBSP",
+          "item": "Cocoa Powder",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "2 TBSP",
+          "item": "Sugar",
+          "grayArea": "some"
+        },
+        {
+          "amount": "3 TBSP",
+          "item": "Milk",
+          "grayArea": "some"
+        },
+        {
+          "amount": "2 TBSP",
+          "item": "Melted Butter or Oil",
+          "grayArea": "exact"
+        },
+        {
+          "amount": "A FEW",
+          "item": "Chocolate Chips",
+          "grayArea": "very"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Mix flour, cocoa powder, and sugar in a large microwave-safe mug.",
+          "grayArea": "exact"
+        },
+        {
+          "step": "Stir in milk and melted butter until smooth, then top with chocolate chips.",
+          "grayArea": "some"
+        },
+        {
+          "step": "Microwave for 60-90 seconds until set but still fudgy. Let cool for a minute before eating.",
+          "grayArea": "some"
         }
       ]
     }

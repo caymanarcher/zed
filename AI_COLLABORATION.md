@@ -9,6 +9,14 @@ It replaced "words" in this code:
 with label.append(checkbox, box, words); as well as "label" instead of words. 
 It also added an accessibility component where tab moves to the next box, and space can check or uncheck it. //
 
-Asked AI to help me create the rest of the code for my recipes based on the 5 I had already created
+Asked Claude to help me create the rest of the code for my recipes based on the 5 I had already created
 
 Asked Claude to add a search bar and category filter (Drinks, Desserts, Meals). It added applyFilters(), which uses .filter() to keep recipes that match both the chosen category and the typed text, using .toLowerCase() so capitals don't matter.
+
+Asked Claude to go through all my code and see if there were any bugs or errors. I fixed two organization issues in my code as well as a line I accidentally left in after deleting other code. 
+
+Asked Claude to teach me some of the more advanced concepts used in my code. It gave me five options, each with a self-test question: event delegation, async/await with fetch, keyboard focus management (tabindex), the custom checkbox, and the self-adjusting grid (auto-fill). I asked it to explain the first two in depth, and use real-world comparisons.
+
+What I learned:
+- async/await and fetch: fetch loads recipes.json in the background so the page doesn't freeze. A 404 error does NOT make fetch throw an error by itself, so my code has to check response.ok. The comparison was a coffee shop buzzer: the buzzer going off doesn't mean you got what you ordered, so you still have to check the tray.
+- tabindex="-1" lets code move focus to the recipe title without adding it to the Tab order.

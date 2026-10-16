@@ -423,14 +423,13 @@ ol.detail-list .gray-badge {
 
 /* Ingredient checkboxes with a hand-drawn X */
 .ingredient-check {
-	position: relative; /* keeps the hidden checkbox inside this row */
+	position: relative; 
 	display: inline-flex;
 	align-items: center;
 	gap: 12px;
 	cursor: pointer;
 }
 
-/* Hide the browser's checkbox but keep it usable by keyboards and screen readers */
 .check-input {
 	position: absolute;
 	width: 1px;
